@@ -14,7 +14,7 @@ CREATE TABLE roles (
   title VARCHAR(30) NOT NULL,
   salary DEC(7, 2) NOT NULL,
   department_id INT NOT NULL,
-  FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE CASCADE
+  FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE CASCADE
 );
 
 CREATE TABLE employees (
